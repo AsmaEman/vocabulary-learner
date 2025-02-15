@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Bell, LogOut, Moon, Sun, User } from "lucide-react";
+import { Bell, LogOut, Moon, Sun, UserIcon } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import type { User } from "@supabase/supabase-js";
@@ -97,7 +97,7 @@ const Index = () => {
                 <Sun className="h-5 w-5" />
               </Button>
               <Button variant="ghost" size="icon">
-                <User className="h-5 w-5" />
+                <UserIcon className="h-5 w-5" />
               </Button>
               <Button variant="ghost" size="icon" onClick={handleSignOut}>
                 <LogOut className="h-5 w-5" />
